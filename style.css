@@ -1,0 +1,41 @@
+.box{
+    border:2px solid red;
+    background-color: aquamarine;
+    position:relative;
+}
+.box2{
+    border:2px solid red;
+    background-color:bisque;
+}
+
+.text{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.para2{
+    display:none;
+}
+.more:checked~ .para2{
+    display:block
+}
+
+.more{
+    display:none;
+}
+
+#top{
+    display:block;
+}
+
+.more:checked ~.top .text{
+    visibility: hidden;
+}
+.more:checked~ .top .text::after{
+    width:100px;
+    visibility: visible;
+    position: relative;
+    left:-100px;
+    content: "Read Less...";
+}
+
